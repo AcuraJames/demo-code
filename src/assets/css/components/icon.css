@@ -1,0 +1,9 @@
+.icon {
+  position: relative;
+}
+.icon__item {
+  text-indent: 0;
+  letter-spacing: normal;
+  @apply fill-current align-middle select-none;
+  @apply absolute inset-0 flex justify-center items-center;
+}

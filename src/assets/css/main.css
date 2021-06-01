@@ -1,0 +1,36 @@
+@import "tailwindcss/base";
+@import "./base.css";
+@import "./fonts.css";
+
+@import "tailwindcss/components";
+@import "./components/layout.css";
+@import "./components/status-bar.css";
+@import "./components/form.css";
+@import "./components/input-base.css";
+@import "./components/text-field.css";
+@import "./components/text-area.css";
+@import "./components/select.css";
+@import "./components/checkbox.css";
+@import "./components/radio-button.css";
+@import "./components/toggle-button.css";
+@import "./components/button.css";
+@import "./components/icon.css";
+@import "./components/alert.css";
+@import "./components/data-table.css";
+@import "./components/transitions.css";
+@import "./components/tooltip.css";
+
+@import "tailwindcss/utilities";
+
+:root {
+  --base-accent1: #404040;    /* spec invoice-header */
+  --base-accent2: #616161;    /* table header text */
+  --base-accent3: #252525;    /* table tr items */
+  --base-background: #0F0F0F; /* view */
+}
+
+/* .light-theme {
+  --base-accent1: #ffffff;
+  --base-accent2: #7b7b7b;
+  --base-accent3: #f4f4f4;
+} */

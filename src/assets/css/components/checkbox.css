@@ -1,0 +1,38 @@
+.checkbox__slot {
+  @apply flex relative;
+}
+
+.checkbox--horizontal .checkbox__slot {
+  @apply mx-auto;
+}
+
+.checkbox--vertical .checkbox__input {
+  @apply flex items-center;
+}
+
+.checkbox--secondary {
+  @apply text-secondary;
+}
+
+.checkbox__input label {
+  @apply text-sm select-none;
+  cursor: pointer !important;
+}
+@screen md {
+  .checkbox__input label {
+    @apply text-base flex items-center;
+  }
+}
+.checkbox__input input {
+  @apply absolute opacity-0;
+  @apply select-none cursor-pointer;
+  width: 16px;
+  height: 16px;
+}
+
+.checkbox__icon {
+  @apply inline-flex relative;
+  @apply pointer-events-none select-none cursor-pointer;
+  width: 16px;
+  height: 16px;
+}

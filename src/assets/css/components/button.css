@@ -1,0 +1,108 @@
+.button {
+  min-width: 120px;
+  height: 26px;
+  padding-left: 20px;
+  padding-right: 20px;
+  @apply flex justify-center items-center;
+  @apply rounded-full bg-primary text-white relative;
+}
+.button:hover {
+  background-color: #6996B2;
+}
+.button:focus,
+.button:active {
+  outline: none;
+}
+.button--white {
+  border-color: #BABABA;
+  color: #BABABA;
+}
+.button--gray {
+  background-color: #626262;
+  color: #fff;
+}
+.button--gray:hover {
+  background-color: #707070;
+}
+.button--secondary {
+  @apply bg-secondary;
+}
+.button--secondary:hover {
+  background-color: #28ACD9;
+}
+.button--disabled {
+  pointer-events: none;
+  cursor: not-allowed;
+  background-color: #626262;
+  color: #ffffff
+}
+.button--disabled:hover {
+   background-color: #626262;
+  color: #ffffff
+}
+
+.button--text {
+  @apply inline-flex;
+  @apply min-w-0 h-auto p-0 bg-transparent border-0 text-primary;
+}
+.button--text:hover {
+  @apply bg-transparent;
+  color: #6996B2;
+}
+.button--text.button--disabled {
+  color: #626262;
+}
+
+.button--squared {
+  @apply w-full border rounded-sm;
+}
+
+.button--outline {
+  @apply bg-transparent border border-primary text-primary;
+  white-space: nowrap;
+}
+.button--outline:hover {
+  @apply bg-transparent text-primary border border-primary;
+}
+.button--outline:hover {
+  @apply bg-transparent;
+  border-color: #6996B2;
+  color: #6996B2;
+}
+
+.button--secondary.button--text {
+  @apply bg-transparent border-0 text-secondary
+}
+.button--secondary.button--text:hover {
+  @apply bg-transparent;
+  color: #28ACD9;
+}
+.button--secondary.button--outline {
+  @apply bg-transparent border border-secondary text-secondary;
+}
+.button--secondary.button--outline:hover {
+  @apply bg-transparent border;
+  border-color: #28ACD9;
+  color: #28ACD9;
+}
+
+.button--small {
+  height: 24px;
+}
+.button--large {
+  height: 36px;
+  padding: 0 35px;
+}
+.button__icon {
+  padding-left: 0;
+  justify-content: flex-start;
+}
+.button__prepend-text {
+  margin-right: 10px;
+  color: #ffffff;
+}
+.button__prepend-icon {
+  margin-left: 4px;
+  margin-right: 10px;
+  position: relative;
+}

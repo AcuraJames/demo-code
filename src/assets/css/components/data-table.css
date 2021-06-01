@@ -1,0 +1,147 @@
+.data-table-wrapper {
+  overflow-x: auto;
+}
+/* table {
+  table-layout: fixed;
+} */
+.data-table thead { 
+  text-align: center;
+  user-select: none;
+}
+
+.data-table thead td {
+  padding: 10px 5px;
+  @apply text-sm;
+}
+.data-table td {
+  padding: 2px 5px;
+}
+.bg-gradient {
+  background: linear-gradient(to top, #252525 0%, #1c1c1c 50%);
+}
+.light-theme .bg-gradient {
+  background: linear-gradient(to top, #cccccc 0%, #d6d6d6 100%);
+}
+.base-accent2 {
+  @apply base-accent2;
+}
+.light-theme .base-accent2 {
+  --base-accent2: #7b7b7b;
+}
+.base-accent3 {
+  @apply bg-accent3;
+}
+.light-theme .base-accent3 {
+  --base-accent3: #ffffff;
+}
+.light-theme .base-accent3:nth-child(2n) {
+  --base-accent3: #f4f4f4;
+}
+.items {
+  height: 40px;
+  border-top: 1px solid #000;
+  cursor: pointer;
+}
+.expanded {
+  position: relative;
+}
+.triangle {
+  position: absolute;
+  left: 20px;
+  top: -11px;
+  width: 10px;
+  height: 10px;
+  transform: rotate(45deg);
+  background-color: #000000;
+}
+.expand {
+  color: red;
+}
+.status-indicator__gray {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 37px;
+  border-radius: 2px 0 0 2px;
+  background-color: gray; 
+}
+.status-indicator__pink {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 37px;
+  border-radius: 2px 0 0 2px;
+  background-color: #FF005E;
+}
+.status-indicator__orange {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 37px;
+  border-radius: 2px 0 0 2px;
+  background-color: #FFB700;
+}
+.status-indicator__green {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 37px;
+  border-radius: 2px 0 0 2px;
+  background-color: #00FF16;
+}
+
+.status-indicator__bordered {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 39px;
+  border-radius: 0;
+  background-color: gray; 
+}
+.status-indicator__bordered--pink {
+  background-color: #FF005E;
+}
+.status-indicator__bordered--orange {
+  background-color: #FFB700;
+}
+.status-indicator__bordered--green {
+  background-color: #00FF16;
+}
+
+.status-indicator {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  background-color: gray; 
+}
+.status-indicator--pink {
+  border-color: #FF005E;
+  background-color: #FF005E;
+}
+.status-indicator--orange {
+  border-color: #FFB700;
+  background-color: #FFB700;
+}
+.status-indicator--green {
+  border-color: #00FF16;
+  background-color: #00FF16;
+}
+
+.data-table .data-table-header__icon {
+  @apply inline-flex align-middle;
+  transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);
+}
+
+.data-table thead td.sortable.active .data-table-header__icon {
+  @apply text-white;
+}
+.data-table thead td.sortable.active.asc .data-table-header__icon {
+  transform: rotate(-180deg);
+}

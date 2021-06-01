@@ -1,0 +1,65 @@
+html,
+body {
+  @apply h-full;
+}
+
+body {
+  @apply p-0 m-0;
+  @apply font-myriad;
+}
+
+h1 {
+  @apply text-2xl mb-8 leading-none;
+}
+@screen lg {
+  h1 {
+    @apply text-3xl;
+  }
+}
+
+.headline {
+  max-width: 460px;
+  @apply text-center mb-0 pt-10 mx-auto;
+}
+.headline > span:first-child {
+  @apply text-white mr-2 inline;
+}
+.headline > span:last-child {
+  @apply text-gray-lightest;
+}
+
+@screen sm {
+  .headline {
+    @apply text-left mx-0;
+  }
+  .headline > span:first-child {
+    @apply block;
+  }
+}
+
+@screen md {
+  .headline {
+    @apply mb-8 pt-12;
+  }
+  .headline > span:first-child {
+    @apply text-gray-lightest;
+  }
+  .headline > span:last-child {
+    @apply text-white;
+  }
+}
+
+/* Turn Off Number Input Arrows */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+/* Turn Off Date Input Arrows */
+[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+img {
+  border-style: none;
+}

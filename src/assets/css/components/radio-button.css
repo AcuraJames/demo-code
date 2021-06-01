@@ -1,0 +1,20 @@
+.radio__slot {
+  @apply flex items-center;
+}
+.radio__slot > label {
+  @apply text-gray-lighter cursor-pointer select-none;
+}
+.radio--center .radio__slot {
+  @apply mx-auto;
+}
+.radio__input > input {
+  @apply absolute opacity-0 cursor-pointer;
+}
+.radio__input > .radio__icon {
+  width: 12px;
+  height: 12px;
+  margin-right: 5px;
+  @apply inline-flex relative;
+  @apply pointer-events-none select-none;
+}
+
